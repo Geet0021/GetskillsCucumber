@@ -22,7 +22,7 @@ public class PublicCourses {
     }
     //action methods
 
-public WebElement getPublicCourses(){return  Courses;}
+    public WebElement getPublicCourses(){return  Courses;}
     public WebElement getJoin(){return join;}
 
     public void click ( ) {
