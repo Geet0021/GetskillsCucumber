@@ -1,9 +1,6 @@
 package Managers;
 
-import PageObjects.LoginPage;
-import PageObjects.PublicCourses;
-import PageObjects.RegisterNewEmployer;
-import PageObjects.SignUpPage;
+import PageObjects.*;
 import org.openqa.selenium.WebDriver;
 
 public class PageObjectManager {
@@ -13,6 +10,7 @@ public class PageObjectManager {
     private SignUpPage signUpPage;
     private PublicCourses publicCourses;
     private RegisterNewEmployer registerNewEmployer;
+    private BackgroundDemoPage backgroundDemoPage;
 
     public PageObjectManager (WebDriver driver) {
         this.driver = driver;
@@ -30,6 +28,7 @@ public class PageObjectManager {
     public RegisterNewEmployer  getRegisterNewEmployer() {
         return ( registerNewEmployer == null)? registerNewEmployer =new RegisterNewEmployer (driver): registerNewEmployer;}
 
-}
-
+    public BackgroundDemoPage getBackgroundDemoPage ( ) {
+        return (backgroundDemoPage == null)? backgroundDemoPage =new BackgroundDemoPage ( driver):backgroundDemoPage;}
+    }
 

@@ -14,6 +14,7 @@ Feature: Go to getskills website
       |Password|abc@abc|
       |Confirm Password|abc@abc|
       |Enter Code  |1010|
+      |Captcha            | 1011   |
      Then click on RegisterNow
 
 
