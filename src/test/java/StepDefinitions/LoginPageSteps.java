@@ -55,7 +55,21 @@ public class LoginPageSteps {
     @When("click on the loginbutton user is inside the loginpage")
     public void click_on_the_loginbutton_user_is_inside_the_loginpage ( ) {
     }
+
+    @Given("enter valid Username {string}")
+    public void enter_valid_username(String string) {
+        pageObjectManager.getLoginPage ().getUsername().sendKeys (string );
+    }
+
+    @Given("enter valid Password {string}")
+    public void enter_valid_password(String string) {
+        pageObjectManager.getLoginPage ().getPassword ().sendKeys ( string );
+
+    }
+
+
 }
+
 
 
 
