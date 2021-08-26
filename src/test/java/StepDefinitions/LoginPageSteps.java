@@ -26,10 +26,12 @@ public class LoginPageSteps {
     //How do you instantiate a page object here
     @Before
     public void BeforeEachScenario ( ) {
+
     }
 
     @After
     public void AfterEachScenario ( ) {
+
     }
 
     @Given("User Navigate to Getskills website")
